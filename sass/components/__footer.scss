@@ -1,0 +1,140 @@
+@import 'sass/utils/variables.scss';
+
+
+.background-footer {
+    width: 100%;
+    background: $darkBackground;
+    }   
+  
+  
+   .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 0px;
+   
+    }
+  
+  
+   .address {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0.03em;
+ 
+    &__location {
+     margin-top: 9px;
+     color: $generalColor;
+     font-size: 1.14; 
+     font-family: $principalText;
+     }
+    
+    &__contact {
+     margin-top: 2px;
+     color: $secundarytextColor;
+     line-height: 1.14;
+     font-weight: 500;
+     font-family: $principalText;
+ 
+     &:hover{
+       color: $secondaryColor;
+     }
+     }
+    }
+  
+       .social-media {
+        margin-left: 80px;
+        margin-right: 80px;
+ 
+        &__text {
+         padding-bottom: 8px;
+         margin-bottom: 10px;
+         color: $generalColor;
+         font-size: 14px; 
+         font-weight: 700;
+         line-height: 16px;
+         font-family: $principalText;
+        letter-spacing: 0.03em;
+        } 
+        }
+  
+         
+        .socialnetwork-icon--visual {
+          margin-right: 10px;
+          fill: $generalColor;
+        }
+  
+ 
+    
+    .suscription{
+      display: flex;
+ 
+      &__email {
+       display: flex;
+       flex-direction: column;
+      }
+ 
+      &__text {
+       font-family: $principalText;
+       font-weight:700;
+       font-size: 14px;
+       line-height: 16px;
+       letter-spacing: 0.03em;
+       text-transform: uppercase;
+       color: $generalColor;
+      }
+ 
+      &__input {
+       width: 358px;
+       height: 50px;
+       border: 1px solid rgba(255, 255, 255, 0.3);
+       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+       border-radius: 4px;
+       border-color: rgba(255, 255, 255, 0.3);
+       background-color: $darkBackground;
+       margin-right: 12px;
+ 
+       &::placeholder{
+         font-family: $principalText;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 20px;
+         letter-spacing: 0.03em;
+         color: rgba(255, 255, 255, 0.6);
+         padding-top: 15px;
+         padding-right: 15px;
+         padding-left: 16px;
+       }
+      }
+ 
+      &__button {
+       position: relative;
+       top: 44px;
+     width: 200px;
+     height: 50px;
+     background: $secondaryColor;
+     border: none;
+     box-shadow: (0, 0, 0, 0.15);
+     border-radius: 4px;
+     cursor: pointer;
+     font-family: $principalText;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 30px;
+     color: $generalColor;
+      }
+ 
+      &__icon {
+       fill: $generalColor;
+       width: 24px;
+       height: 24px;
+       text-align: center;
+       border-radius: 0%;
+       margin-bottom: -5px;
+       margin-left: 20px;
+    }
+    }

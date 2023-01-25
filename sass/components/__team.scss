@@ -1,0 +1,48 @@
+@import 'sass/utils/variables.scss';
+
+.background-team {
+    width: 100%;
+    height: 708px;
+    background: #F5F4FA;
+    margin-bottom: 0px;
+    }  
+      .team {
+       height: 650px;
+       margin:0 auto;
+       margin-bottom: 0px;
+
+       &__title {
+        font-size: 36px;
+        color:#212121;
+        line-height: 1.17;
+        font-weight: 700;
+        text-align: center; 
+        padding-top: 94px;
+        padding-bottom: 10px;
+        margin-top: 0px;
+        } 
+       }
+ 
+        .our-team {
+           font-size: 16px;
+           line-height: 1.18;
+           text-decoration: none;
+           font-weight: 500;
+           text-align: center;
+           display: flex;
+           justify-content: space-between;
+
+           &__card {
+            display: block;
+            width: 270px;
+            height: 428px;
+            background-color: $generalColor;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+            }
+
+           &__text {
+            color: $secundarytextColor;
+            font-weight: 400;
+            }
+          }

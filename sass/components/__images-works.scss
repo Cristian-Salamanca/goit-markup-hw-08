@@ -1,0 +1,46 @@
+@import 'sass/utils/variables.scss';
+
+.works-page {
+    margin:0 auto;
+    background-color: $generalColor;
+ 
+    &__title {
+     font-size: 36px;
+     color:#212121;
+     line-height: 1.17;
+     font-weight: 700;
+     margin: 0 auto;
+     text-align: center;
+    }
+    
+    &__images {
+     margin-top: 60px;
+     display: flex;
+     justify-content: space-between;
+     }
+ 
+    &__background {
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     overflow: hidden;
+   }
+ 
+   &__background-text {
+     position:absolute;
+     top: 71%;
+     width: 100%;
+     background: rgba(47, 48, 58, 0.8);
+     font-family: $principalText;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 16px;
+     text-align: center;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     color: $generalColor;
+     padding-top: 27px;
+     padding-bottom: 27px;
+   }
+     }

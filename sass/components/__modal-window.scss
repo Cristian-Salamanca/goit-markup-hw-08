@@ -1,0 +1,186 @@
+@import 'sass/utils/variables.scss';
+
+.is-hidden {
+    display: none;
+   }
+
+   .background-modal {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.4); 
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    visibility: visible;
+    pointer-events: auto;
+
+   }
+
+   .form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 14%;
+    left: 33%;
+    width: 528px;
+    height: 581px;
+    background-color: $generalColor;
+    animation-name: blueOverlay;
+    animation-duration: 2s;
+    
+    &__button-close{
+     background: $generalColor;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    font-size: 55px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    right: -47%;
+    overflow: hidden;
+    margin-bottom: -10px;
+    color: $secondaryColor;
+    fill:currentColor;
+
+    & :hover{
+     color: $secondaryColor;  
+    }
+    }
+
+    &__icon-boton-close {
+     position: absolute;
+     top: 20%;
+     left: 0;
+     background-color: $generalColor;
+     color:#212121;
+     fill: currentColor;
+     width: 100%;
+     height: 18px;
+    }
+
+    &__title {
+     font-family: $principalText;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 23px;
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: #212121;
+     margin-bottom: 10px;
+     margin-top: 20px;
+    }
+
+    &__label {
+     position: relative;
+    }
+
+    &__text {
+     font-family: $principalText;
+     font-weight: 400;   
+     font-size: 12px; 
+     line-height: 14px;
+     letter-spacing: 0.01em;
+     color: $secundarytextColor;
+     margin-bottom: 4px;
+     margin-top: -3px;
+     outline: none;
+    }
+
+    &__input {
+     width: 100%;
+     height: 40px;
+     border: 1px solid rgba(33, 33, 33, 0.2);
+     border-radius: 4px;
+     padding-left: 42px;
+     outline: none;
+     margin-bottom: -1%;
+
+     &:focus{
+       border: 1px solid $secondaryColor;
+     }
+     &:focus +.form__icon {
+       fill: $secondaryColor;
+      }
+      }
+
+      &__icon {
+       position: relative;
+       width: 14px;
+       height: 14px;
+       left: 3.5%;
+       top: -23px;
+       color: black;
+       fill: currentColor;
+      }
+
+      &__input-comments {
+       width: 448px;
+       height: 120px;
+       border: 1px solid rgba(33, 33, 33, 0.2);
+       border-radius: 4px;
+       padding-left: 16px;
+       padding-right: 16px;
+       padding-top: 12px;
+       padding-bottom: 12px;
+       outline: none;  
+
+       &:focus-within{
+         border: 1px solid $secondaryColor;
+       }
+
+       &::placeholder{
+         font-family: $principalText;
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 14px;
+         letter-spacing: 0.01em;
+         color: rgba(117, 117, 117, 0.5);
+       }
+     }
+
+     &__checkbox {
+       display: flex;
+       justify-content: center;
+       align-items: flex-start;
+       margin-top: 20px;
+     }
+
+     &__checkbox-text {
+       font-family: $principalText;
+       font-style: normal;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 24px;
+       letter-spacing: 0.03em;
+       color: $secundarytextColor;
+       margin-top: -5px;
+       margin-left: 8px;
+     }
+
+     &__send-button {
+       position: relative;
+       left: 28%;
+     width: 200px;
+     height: 50px;
+     background: $secondaryColor;
+     border: none;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+     cursor: pointer;
+     font-family: $principalText;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 30px;
+     color: $generalColor;
+     margin-top: -8px;
+      }
+   }

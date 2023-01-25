@@ -1,0 +1,128 @@
+
+@import 'sass/utils/variables.scss';
+
+  .header {
+     
+    height: 80px;
+    margin:0 auto;
+    background-color: $generalColor; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0%;
+
+    font-size: 14px;
+    line-height: 1.14;
+    color: $secondaryColor;
+     text-decoration: none;
+  }
+   
+
+     .nav {
+      display: flex;
+      
+      &__pages {
+       color:black;
+       font-size: 14px;
+       line-height: 1.14;
+       font-weight: 500;
+       margin: 30px;
+       position: relative;
+
+       &:hover {
+         color: $secondaryColor;
+
+           &::after {
+             content: "";
+             position: absolute;
+             top: 265%;
+             left:0%;
+             display: flex;
+             align-items: center;  
+             width: 100%;
+             height: 4px;
+             background: $secondaryColor;
+             border-radius: 2px;
+           }
+         }
+
+         &:focus{
+           color: $secondaryColor;
+         }
+       }       
+      }
+     
+
+      .nav-contacts {
+       display: flex;
+       justify-content: flex-end;
+       margin: 0px;
+
+       &__text {
+         color: $secundarytextColor;
+         line-height: 1.14;
+         font-weight: 500;
+         display: flex;
+         justify-content: end;
+         align-items: center;
+         margin-left: 0px;  
+
+         }
+
+       &__icon-envelope {
+         color: $secundarytextColor;
+         fill: currentColor;
+         width: 26px;
+         height: 26px;
+         margin-right: 9px;
+         margin-left: 28px;
+
+         &:hover{
+           color: $secondaryColor;
+           fill: currentColor;
+         }
+
+         &:has(+ .nav-contacts__text:hover) {
+           color: $secondaryColor;
+         }
+
+         &:focus{
+           color: $secondaryColor;
+           fill: currentColor;
+         }
+       }
+
+       &__icon-phone {
+         color:$secundarytextColor;
+         fill: currentColor;
+         width: 26px;
+         height: 26px;
+         margin-right: 4px;
+         margin-left: 28px;
+
+         &:hover{
+           color: $secondaryColor;
+           fill: currentColor;
+         }
+         &:focus{
+           color: $secondaryColor;
+           fill: currentColor;
+         }
+       }
+         }
+       
+         .nav-contacts__text:hover,
+         .nav-contacts__icon-phone:has(+ .nav-contacts__text:hover) {
+           color: $secondaryColor;
+         }
+
+ /*portafio-page*/
+
+         .line {
+            width: 100%;
+            height: 81px;
+            margin:0 auto;
+            background-color: $generalColor;
+            padding: 0%;
+            border-bottom: 0.2px solid #F2F2F2;
+          }
