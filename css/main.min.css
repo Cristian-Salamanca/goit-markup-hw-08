@@ -22,12 +22,18 @@ span {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    margin: 0 auto;
     background-color: blueviolet; } }
 
 .section {
   margin-left: 0 auto;
-  margin-right: 0 auto;
-  padding-top: 94px; }
+  margin-right: 0 auto; }
+
+@media screen and (min-width: 1200px) {
+  .section {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    padding-top: 94px; } }
 
 .header {
   height: 60px;
@@ -228,7 +234,7 @@ span {
   .slogan-register__slogan {
     padding-top: 118px;
     display: block;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     font-weight: 900;
     color: #FFFFFF;
@@ -259,14 +265,16 @@ span {
 @media screen and (min-width: 1200px) {
   .slogan-register {
     display: inline-block;
-    position: relative; }
+    position: relative;
+    align-items: center; }
     .slogan-register__slogan {
       display: block;
       font-size: 44px;
       line-height: 1.36;
       font-weight: 900;
       color: #FFFFFF;
-      text-align: center; }
+      text-align: center;
+      margin-top: -20%; }
     .slogan-register__button {
       display: flex;
       align-items: center;
@@ -441,6 +449,7 @@ span {
 
 .profit-page {
   margin: 0 auto;
+  margin-top: 10%;
   text-align: center;
   background-color: #FFFFFF;
   font-size: 14px;
@@ -454,7 +463,7 @@ span {
   padding-left: 0%;
   padding-right: 0%; }
   .profit-page__paragraph {
-    width: 270px; }
+    width: 100%; }
   .profit-page__icon {
     background-color: #FFFFFF;
     color: #757575;
@@ -601,7 +610,6 @@ span {
     margin-top: 0px; }
 
 .our-team {
-  background-color: aqua;
   font-size: 16px;
   line-height: 1.18;
   text-decoration: none;
@@ -612,8 +620,7 @@ span {
   justify-content: space-between; }
   .our-team__card {
     display: block;
-    width: 270px;
-    height: 428px;
+    width: 100%;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px; }
@@ -678,7 +685,8 @@ span {
 .customers {
   margin-top: 59px;
   margin-bottom: 0px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   .customers__title {
     font-size: 36px;
     color: #212121;
@@ -691,7 +699,7 @@ span {
     width: 172px;
     height: 81px;
     margin-left: 0px;
-    margin-right: 30px;
+    margin-right: 0px;
     border: 1px solid currentColor;
     border-radius: 4px;
     cursor: pointer; }
@@ -720,6 +728,10 @@ span {
   .customers {
     margin-top: 59px;
     margin-bottom: 0px; }
+    .customers__logo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
     .customers__title {
       font-size: 36px;
       color: #212121;
@@ -732,7 +744,8 @@ span {
       width: 172px;
       height: 81px;
       margin-left: 0px;
-      margin-right: 30px;
+      align-items: center;
+      margin-right: 0px;
       border: 1px solid currentColor;
       border-radius: 4px;
       cursor: pointer; }
@@ -758,13 +771,16 @@ span {
         color: #2196F3; } }
 
 .background-footer {
-  width: 100%;
-  background: #2F303A; }
+  margin-top: 10%;
+  flex-basis: 100%;
+  background: #2F303A;
+  text-align: center;
+  overflow: hidden; }
 
 .footer {
-  display: inline-block;
-  text-align: center;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   margin: 0 auto;
   padding-top: 60px;
@@ -773,10 +789,12 @@ span {
 
 .address {
   display: flex;
+  text-align: center;
   flex-direction: column;
   text-decoration: none;
   font-style: normal;
-  letter-spacing: 0.03em; }
+  letter-spacing: 0.03em;
+  margin-bottom: 10%; }
   .address__location {
     margin-top: 9px;
     color: #FFFFFF;
@@ -793,7 +811,8 @@ span {
 
 .social-media {
   margin-left: 80px;
-  margin-right: 80px; }
+  margin-right: 80px;
+  margin-bottom: 10%; }
   .social-media__text {
     padding-bottom: 8px;
     margin-bottom: 10px;
@@ -809,8 +828,9 @@ span {
   fill: #FFFFFF; }
 
 .suscription {
-  display: inline-block;
-  background-color: aqua; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .suscription__email {
     display: flex;
     flex-direction: column; }
@@ -823,14 +843,14 @@ span {
     text-transform: uppercase;
     color: #FFFFFF; }
   .suscription__input {
+    box-sizing: border-box;
     width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     border-color: rgba(255, 255, 255, 0.3);
-    background-color: #2F303A;
-    margin-right: 12px; }
+    background-color: #2F303A; }
     .suscription__input::placeholder {
       font-family: "Roboto", sans-serif;
       font-weight: 400;
@@ -843,7 +863,7 @@ span {
       padding-left: 16px; }
   .suscription__button {
     position: relative;
-    top: 44px;
+    margin-top: 5%;
     width: 200px;
     height: 50px;
     background: #2196F3;
@@ -868,9 +888,12 @@ span {
 @media screen and (min-width: 1200px) {
   .background-footer {
     width: 100%;
-    background: #2F303A; }
+    background: #2F303A;
+    text-align: unset;
+    margin-top: 0%; }
   .footer {
     display: flex;
+    flex-direction: unset;
     justify-content: space-between;
     text-align: unset;
     width: 1200px;
@@ -880,10 +903,12 @@ span {
     margin-bottom: 0px; }
   .address {
     display: flex;
+    text-align: unset;
     flex-direction: column;
     text-decoration: none;
     font-style: normal;
-    letter-spacing: 0.03em; }
+    letter-spacing: 0.03em;
+    margin-bottom: -10%; }
     .address__location {
       margin-top: 9px;
       color: #FFFFFF;
@@ -899,7 +924,8 @@ span {
         color: #2196F3; }
   .social-media {
     margin-left: 80px;
-    margin-right: 80px; }
+    margin-right: 80px;
+    margin-bottom: -15%; }
     .social-media__text {
       padding-bottom: 8px;
       margin-bottom: 10px;
@@ -913,7 +939,8 @@ span {
     margin-right: 5px;
     fill: #FFFFFF; }
   .suscription {
-    display: flex; }
+    display: flex;
+    flex-direction: unset; }
     .suscription__email {
       display: flex;
       flex-direction: column; }
@@ -933,6 +960,7 @@ span {
       border-radius: 4px;
       border-color: rgba(255, 255, 255, 0.3);
       background-color: #2F303A;
+      align-items: center;
       margin-right: 12px; }
       .suscription__input::placeholder {
         font-family: "Roboto", sans-serif;
@@ -946,7 +974,7 @@ span {
         padding-left: 16px; }
     .suscription__button {
       position: relative;
-      top: 44px;
+      top: 8px;
       width: 200px;
       height: 50px;
       background: #2196F3;

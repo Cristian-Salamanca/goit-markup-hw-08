@@ -2,15 +2,18 @@
 
 
 .background-footer {
-    width: 100%;
+    margin-top: 10%;
+    flex-basis: 100%;
     background: $darkBackground;
+    text-align: center;
+    overflow: hidden;
     }   
   
   
    .footer {
-    display: inline-block;
-    text-align: center;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     margin: 0 auto;
     padding-top: 60px;
@@ -22,10 +25,12 @@
   
    .address {
     display: flex;
+    text-align: center;
     flex-direction: column;
     text-decoration: none;
     font-style: normal;
     letter-spacing: 0.03em;
+    margin-bottom: 10%;
  
     &__location {
      margin-top: 9px;
@@ -50,6 +55,7 @@
        .social-media {
         margin-left: 80px;
         margin-right: 80px;
+        margin-bottom: 10%;
  
         &__text {
          padding-bottom: 8px;
@@ -72,9 +78,9 @@
  
     
     .suscription{
-      display: inline-block;
-      background-color: aqua;
- 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       &__email {
        display: flex;
        flex-direction: column;
@@ -91,6 +97,7 @@
       }
  
       &__input {
+        box-sizing: border-box;
        width: 450px;
        height: 50px;
        border: 1px solid rgba(255, 255, 255, 0.3);
@@ -98,7 +105,6 @@
        border-radius: 4px;
        border-color: rgba(255, 255, 255, 0.3);
        background-color: $darkBackground;
-       margin-right: 12px;
  
        &::placeholder{
          font-family: $principalText;
@@ -115,7 +121,7 @@
  
       &__button {
        position: relative;
-       top: 44px;
+       margin-top: 5%;
      width: 200px;
      height: 50px;
      background: $secondaryColor;
@@ -145,11 +151,14 @@
       .background-footer {
         width: 100%;
         background: $darkBackground;
+        text-align: unset;
+        margin-top: 0%;
+
         }   
-      
       
        .footer {
         display: flex;
+        flex-direction: unset;
         justify-content: space-between;
         text-align: unset;
         width: 1200px;
@@ -163,10 +172,13 @@
       
        .address {
         display: flex;
+        text-align: unset;
         flex-direction: column;
         text-decoration: none;
         font-style: normal;
         letter-spacing: 0.03em;
+        margin-bottom: -10%;
+
      
         &__location {
          margin-top: 9px;
@@ -191,6 +203,7 @@
            .social-media {
             margin-left: 80px;
             margin-right: 80px;
+            margin-bottom: -15%;
      
             &__text {
              padding-bottom: 8px;
@@ -213,8 +226,8 @@
      
         
         .suscription{
-          display: flex;
-     
+          display: flex;   
+          flex-direction: unset;  
           &__email {
            display: flex;
            flex-direction: column;
@@ -238,7 +251,9 @@
            border-radius: 4px;
            border-color: rgba(255, 255, 255, 0.3);
            background-color: $darkBackground;
+           align-items: center;
            margin-right: 12px;
+
      
            &::placeholder{
              font-family: $principalText;
@@ -255,7 +270,7 @@
      
           &__button {
            position: relative;
-           top: 44px;
+           top: 8px;
          width: 200px;
          height: 50px;
          background: $secondaryColor;
