@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./css/main.min.css" />
+  
+
+    
   </head>
 
   <body>
@@ -19,35 +22,62 @@
       <div class="header">
         <a class="logo" href="index.html">Web<span>Studio</span></a>
 
+   <!-- menu-despegable -->
 
-        <div>
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-  
-          <ul class="menu">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
-          </ul>
-        </div>
+
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="menu">
+        <li><a href="" class="menu__link">About</a></li>
+        <li><a href="" class="menu__link">Products</a></li>
+        <li><a href="" class="menu__link">Contacts</a></li>
+        <li><a href="" class="menu__link">Career</a></li>
+      </ul>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="mobile-menu__link">About</a></li>
+        <li><a href="" class="mobile-menu__link">Products</a></li>
+        <li><a href="" class="mobile-menu__link">Contacts</a></li>
+        <li><a href="" class="mobile-menu__link">Career</a></li>
+      </ul>
+    </div>
+
+
 
         <div class="nav">
           <nav>
@@ -162,7 +192,8 @@
             </svg>
             <h3 class="profit-page__title">ATTENTION TO DETAILS</h3>
             <p class="profit-page__text">
-              We go into the details and processes of your business to develop a customized solution.
+              We go into the details and processes of your business to develop a
+              customized solution.
             </p>
           </div>
 
@@ -172,7 +203,8 @@
             </svg>
             <h3 class="profit-page__title">PUNCTUALITY</h3>
             <p class="profit-page__text">
-              With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.
+              With us, you can feel safe and secure. An important principle of
+              the company: respect your time and deadlines.
             </p>
           </div>
 
@@ -182,7 +214,8 @@
             </svg>
             <h3 class="profit-page__title">PLANNING</h3>
             <p class="profit-page__text">
-              You will be able to observe and participate in every phase of solution development and implementation.
+              You will be able to observe and participate in every phase of
+              solution development and implementation.
             </p>
           </div>
 
@@ -192,7 +225,8 @@
             </svg>
             <h3 class="profit-page__title">MODERN TECHNOLOGIES</h3>
             <p class="profit-page__text">
-              We use innovative tools to solve assigned tasks. It's to simplify work processes.
+              We use innovative tools to solve assigned tasks. It's to simplify
+              work processes.
             </p>
           </div>
         </div>
@@ -322,7 +356,11 @@
 
               <div class="our-team__card">
                 <a href="">
-                  <img src="images/pablo.jpg" alt="Pablo-picture" width="100%" />
+                  <img
+                    src="images/pablo.jpg"
+                    alt="Pablo-picture"
+                    width="100%"
+                  />
                 </a>
                 <p>Tyler Moore</p>
                 <p class="our-team__text">IU Designer</p>
@@ -352,51 +390,27 @@
         <div class="section container customers">
           <h2 class="customers__title">Clientes Regulares</h2>
           <div class="customers__logo">
-            <svg
-              class="customers__icons"
-              color="#757575"
-              viewBox="-10 0 30 23"
-            >
+            <svg class="customers__icons" color="#757575" viewBox="-10 0 30 23">
               <use href="./images/icons.svg#icon-company4one"></use>
             </svg>
 
-            <svg
-              class="customers__icons"
-              color="#757575"
-              viewBox="0 0 30 23"
-            >
+            <svg class="customers__icons" color="#757575" viewBox="0 0 30 23">
               <use href="./images/icons.svg#icon-company4two"></use>
             </svg>
 
-            <svg
-              class="customers__icons"
-              color="#757575"
-              viewBox="0 0 30 23"
-            >
+            <svg class="customers__icons" color="#757575" viewBox="0 0 30 23">
               <use href="./images/icons.svg#icon-company4three"></use>
             </svg>
 
-            <svg
-              class="customers__icons"
-              color="#757575"
-              viewBox="0 0 30 23"
-            >
+            <svg class="customers__icons" color="#757575" viewBox="0 0 30 23">
               <use href="./images/icons.svg#icon-company4four"></use>
             </svg>
 
-            <svg
-              class="customers__icons"
-              color="#757575"
-              viewBox="0 0 30 23"
-            >
+            <svg class="customers__icons" color="#757575" viewBox="0 0 30 23">
               <use href="./images/icons.svg#icon-company4five"></use>
             </svg>
 
-            <svg
-              class="customers__icons"
-              color="#757575"
-              viewBox="0 0 30 23"
-            >
+            <svg class="customers__icons" color="#757575" viewBox="0 0 30 23">
               <use href="./images/icons.svg#icon-company4six"></use>
             </svg>
           </div>
@@ -456,12 +470,10 @@
             </div>
           </div>
 
-          <div >
+          <div>
             <form class="suscription">
               <label class="suscription__email">
-                <p class="suscription__text">
-                  SUSCRIBE TO THE NEWSLETTER
-                </p>
+                <p class="suscription__text">SUSCRIBE TO THE NEWSLETTER</p>
 
                 <input
                   class="suscription__input"
@@ -483,11 +495,11 @@
 
     <script src="./js/modal.js"></script>
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script defer src=".js/mobile-menu.js"></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
